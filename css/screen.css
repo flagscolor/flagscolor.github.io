@@ -338,7 +338,7 @@ template {
 	}
 
 	.center-on-mobiles {
-		text-align: center !important
+		/* text-align: center !important */
 	}
 
 	.hide-on-mobiles {
@@ -725,6 +725,7 @@ nav li {
 }
 
 .main-nav {
+	/* SAM removed margin-top */
 	margin-top: 52px
 }
 
@@ -942,7 +943,7 @@ footer img {
 	display: block;
 	padding: 0;
 	font-family: Menlo, Consolas, "Courier New", Courier, "Liberation Mono", monospace;
-	line-height: 1.3em
+	line-height: 1.3ems;
 }
 
 .quickstart .code .title {
