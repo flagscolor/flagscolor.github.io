@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>http://yourdomain.com/blog.html</loc>
+<loc>/blog/</loc>
 </url>
 <url>
-<loc>http://yourdomain.com/</loc>
+<loc>/team/</loc>
 </url>
 <url>
-<loc>http://yourdomain.com/team.html</loc>
+<loc>/</loc>
 </url>
 </urlset>
