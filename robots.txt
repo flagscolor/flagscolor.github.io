@@ -1,1 +1,1 @@
-Sitemap: http://yourdomain.com/sitemap.xml
+Sitemap: https://colorflagsgame.com/sitemap.xml
