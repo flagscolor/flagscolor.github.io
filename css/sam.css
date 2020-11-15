@@ -1,6 +1,26 @@
+/* <p> styling off */
+
+.intro p {
+	/* font-size: 1.75em;
+	line-height: 1em;
+	margin: 0 */
+}
+
+@media (min-width:569px) {
+	/* .intro p {
+		font-size: 3.2em
+	} */
+}
+
+p {
+	/* line-height: 1.5em */
+}
+
+/* end <p> styling off */
+
 .flags-background {
-    max-width: 852px;
-    height: 480px;
+    max-width: 900px;
+    height: 526px;
     margin-left: auto;
     margin-right: auto;
     background: url("/img/start-menu-rearrange.png");
@@ -35,25 +55,30 @@
     margin-left: auto;
     margin-right: auto;
     background: url("/img/start-menu-rearrange.png");
+     background-color: #595959;
     background-position: center center;
     /* -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px; */
-    box-shadow: 0 1px 4px black, 0 0 20px rgba(0, 0, 0, 0.1) inset;
+    /* box-shadow: 0 1px 4px black, 0 0 20px rgba(0, 0, 0, 0.1) inset; */
     background-repeat: no-repeat;
 }
 
 #bg {
-    max-width: 852px;
-    height: 480px;
+    max-width: 900px;
+    height: 526px;
     background-position: center top;
     padding: 100px 88px 100px 88px;
+    /* padding: 50px 35px 50px 35px; */
+    background-color: rgba(76, 175, 80, 0.6);
+    /* box-shadow: 0 0 10px 10px rgba(76, 175, 80, 1) inset; */
+    /* box-shadow: 0 0 10px 10px #e5e6e4 inset; */
+    /* border: 1px solid black; */
 }
 
 #search-container {
     min-height: 100%;
     height:100%;
-    /* overflow: scroll; */
     position: relative;
 
     -webkit-border-radius: 5px;
@@ -78,12 +103,13 @@
     z-index: 99;
 
     /* Matches padding in #bg */
-    background-position: center -120px;
+    /* background-position: center -120px; */
 
     opacity: 1;
     -webkit-filter: blur(10px);
     filter: blur(10px);
-    transform: scale(1.1) skewX(5deg);
+    transform: scale(1) skewX(2deg);
+    background-color: rgba(76, 175, 80, 1);
 
 }
 
@@ -93,23 +119,23 @@
     /* Put this on top of the blurred layer */
     position: relative;
     z-index: 100;
+    width:100%;
 
-    display:flex;
-    align-items: start;
-    justify-content: center;
+    /* display:flex;
+    align-items: start; */
+    /* justify-content: center; */
 
     /* text-shadow: 2px 2px 1px rgba(56, 47, 43, 0.3);
     background: rgba(0, 0, 0, 0.5) none repeat scroll 0% 0%/auto padding-box border-box;
     box-sizing: border-box; */
-
-    /* background: rgba(34,34,34,1); */
 }
 
 #search > div > h4 {
     padding:10px;
     text-align: center;
 }
-.game {
+
+.game, .blog, .policy{
     padding: 5px;
     margin: 0px 4px 0px 4px;
     width: 100%;
@@ -119,40 +145,47 @@
     -moz-border-radius: 5px;
     border-radius: 5px;
 
-    text-shadow: 2px 2px 1px rgba(56, 47, 43, 1);
+    text-shadow: 1px 1px 1px rgba(56, 47, 43, 1);
+    background-color: rgba(64, 193, 104, .8);
 
-    /* background: rgba(235, 215, 141, .5); */
+    /* background: rgba(51, 51, 51, 0.9) none repeat scroll 0% 0%/auto padding-box border-box; */
 
-    background: rgba(51, 51, 51, 0.9) none repeat scroll 0% 0%/auto padding-box border-box;
-    box-shadow: 0 1px 4px black, 0 0 20px rgba(0, 0, 0, 0.1) inset;
+    box-shadow: 0 1px 4px black, 0 0 20px rgba(0, 0, 0, 1) inset;
     box-sizing: border-box;
+    overflow: auto;
 }
 
 .team {
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
     padding: 5px;
     margin: 0px 4px 0px 4px;
-    width: 60%;
+    width: 100%;
     height: 100%;
 
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
 
-    text-shadow: 2px 2px 1px rgba(56, 47, 43, 1);
+    text-shadow: 1px 1px 1px rgba(56, 47, 43, 1);
+    background-color: rgba(64, 193, 104, .8);
 
-    /* background: rgba(235, 215, 141, .5); */
+    /* background: rgba(51, 51, 51, 0.9) none repeat scroll 0% 0%/auto padding-box border-box; */
 
-    background: rgba(51, 51, 51, 0.9) none repeat scroll 0% 0%/auto padding-box border-box;
-    box-shadow: 0 1px 4px black, 0 0 20px rgba(0, 0, 0, 0.1) inset;
+    box-shadow: 0 1px 4px black, 0 0 20px rgba(0, 0, 0, 1) inset;
     box-sizing: border-box;
+    overflow: auto;
 }
 
-.team > div {
-    padding: 10px;
-    text-align: center;
+.ba {
+    flex-basis: 50%;
+    /* padding: 10px; */
+    /* text-align: center; */
     /* min-height: 100%; */
     height:100%;
-    width:100%;
+    /* width:100%; */
+    /* float:left; */
 
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -164,41 +197,59 @@
     /* background: url("/img/pattern/dynamic-style.png"); */
     /* background-size: 200px; */
     background-repeat: repeat;
-    overflow: hidden;
+    /* overflow: hidden; */
     position:relative;
 }
 
-.team > div > h2 {
-    display: inline-block;
+.ka {
+    flex-basis: 50%;
+    /* padding: 10px; */
     /* text-align: center; */
+    /* min-height: 100%; */
+    height:100%;
+    /* width:49%; */
+    /* float:right; */
+
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+
+    /* opacity: 0.5; */
+    /* background: url("/img/pattern/5015.png"); */
+    /* background-size: 125px; */
+    /* background: url("/img/pattern/dynamic-style.png"); */
+    /* background-size: 200px; */
+    background-repeat: repeat;
+    /* overflow: hidden; */
+    position:relative;
+}
+
+.floatit {
+    float:right;
     position: absolute;
     /* margin-left: 50%; */
     /* bottom: 40px; */
-    transform: translateX(-50%);
+    /* transform: translateX(-50%); */
 }
 
 .team > div > img {
-    display:block;
-    padding:4px;
-    border: 3px solid black;
-    border-style: double;
+    /* display:block; */
+    /* float:right; */
+    border: 1px solid black;
+    /* border-style: single; */
     border-radius: 5%;
     height: 90%;
     /* width: 100%; */
-    margin-left:auto;
-    margin-right:auto;
-    background: url("/img/pattern/dynamic-style.png");
     /* background-size: 200px; */
-
-    object-fit: cover;
-    object-position: 50% 0%;
 }
 
 h5 {
     /* display:block; */
 }
 
-@media (max-width: 600px ) {
-    #bg { padding: 10px; }
-    #search-bg { background-position: center -10px; }
+@media (max-width: 640px ) {
+    /* #bg { padding: 10px; } */
+    /* #search-bg { background-position: center -10px; } */
+    .ka {flex-basis:100%}
+    .ba {flex-basis:100%}
 }
